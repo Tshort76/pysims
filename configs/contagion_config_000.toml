@@ -1,0 +1,12 @@
+[simulation]
+n_agents = 200
+n_steps = 100
+
+[grid]
+width = 20
+height = 20
+
+[virus]
+initial_infected_fraction = 0.5 # 5% start infected
+infection_probability = 0.2     # Chance to infect a cellmate per step
+recovery_probability = 0.1      # Chance to recover per step

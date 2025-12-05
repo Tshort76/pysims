@@ -1,0 +1,20 @@
+[simulation]
+n_agents = 50           # Total number of initial female agents
+n_steps = 500           # Total simulation steps
+random_seed = 42        # For reproducibility (optional implementation)
+
+[biology]
+cycle_length = 14       # Days in a cycle
+fertile_day = 7         # Day of peak fertility
+base_offspring_success = 1.0 # Baseline score for a successful mating
+
+[social]
+concealed_fraction = 0.5    # Percentage of females with concealed ovulation (0.0 to 1.0)
+rivalry_cost_factor = 0.2   # Penalty (0.0 to 1.0) applied to overt females by rivals
+
+[behavior]
+# Male investment logic thresholds
+paternity_certainty_overt = 0.8      # Certainty if ovulation is visible
+paternity_certainty_concealed = 0.3  # Certainty if ovulation is hidden
+investment_threshold = 0.4           # Minimum certainty required to invest
+investment_increment = 0.1           # Resource gain per step if investing
